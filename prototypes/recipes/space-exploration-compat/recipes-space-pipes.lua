@@ -4,30 +4,30 @@ data:extend({
     name = "underground-pipe-segment-space",
     ingredients =
     {
-      {type = "item", name = "underground-pipe-segment-t1", amount = 1},
-      {type = "item", name = "copper-cable", amount = 2 },
-      {type = "item", name = "se-heavy-girder", amount = 1},
-      {type = "item", name = "plastic-bar",amount =  1 },
-      {type = "item", name = "glass", amount = 1 },
+      {"underground-pipe-segment-t1", 1},
+      {"copper-cable", 2 },
+      {"se-heavy-girder", 1},
+      {"plastic-bar", 1 },
+      {"glass", 1 },
     },
     enabled = false,
-    results = {{type="item", name="underground-pipe-segment-space", amount=1}}
+    result = "underground-pipe-segment-space"
   },
 })
 
 data:extend({
   {
-    type = "recipe",
-    name = "space-pipe-coupler",
+    type = 'recipe',
+    name = 'space-pipe-coupler',
     ingredients =
     {
-      {type = "item", name = "small-pipe-coupler", amount = 1},
-      {type = "item", name = "copper-cable", amount = 2 },
-      {type = "item", name = "se-heavy-girder", amount = 1},
-      {type = "item", name = "plastic-bar", amount = 1 },
+      {'small-pipe-coupler', 1},
+      {"copper-cable", 2 },
+      {"se-heavy-girder", 1},
+      {"plastic-bar", 1 },
     },
     enabled = false,
-    results = {{type="item", name="space-pipe-coupler", amount=1}}
+    result = 'space-pipe-coupler'
 },
 })
 
@@ -39,13 +39,13 @@ data:extend({
     name = "one-to-one-forward-space-pipe",
     ingredients =
     {
-      {type = "item", name = "se-space-pipe", amount = 1},
-      {type = "item", name = "swivel-joint", amount = 1},
-      {type = "item", name = "space-pipe-coupler", amount = 1},
-      {type = "item", name = "underground-pipe-segment-space", amount = 5}
+      {"se-space-pipe", 1},
+      {"swivel-joint", 1},
+      {"space-pipe-coupler", 1},
+      {"underground-pipe-segment-space", 5}
     },
     enabled = false,
-    results = {{type="item", name="one-to-one-forward-space-pipe", amount=1}}
+    result = "one-to-one-forward-space-pipe"
   },
   -- ONE TO TWO PIPES
   {
@@ -53,26 +53,26 @@ data:extend({
     name = "one-to-two-perpendicular-space-pipe",
     ingredients =
     {
-      {type = "item", name = "se-space-pipe", amount = 1},
-      {type = "item", name = "swivel-joint", amount = 1},
-      {type = "item", name = "space-pipe-coupler", amount = 2},
-      {type = "item", name = "underground-pipe-segment-space", amount = 10},
+      {"se-space-pipe", 1},
+      {"swivel-joint", 1},
+      {"space-pipe-coupler", 2},
+      {"underground-pipe-segment-space", 10},
     },
     enabled = false,
-    results = {{type="item", name="one-to-two-perpendicular-space-pipe", amount=1}}
+    result = "one-to-two-perpendicular-space-pipe"
   },
   --[[{
     type = "recipe",
     name = "one-to-two-L-FL-space-pipe",
     ingredients =
     {
-      {type = "item", name = "se-space-pipe", 1},
-      {type = "item", name = "swivel-joint", 1},
-      {type = "item", name = "space-pipe-coupler", 2},
-      {type = "item", name = "underground-pipe-segment-space", 10},
+      {"se-space-pipe", 1},
+      {"swivel-joint", 1},
+      {"space-pipe-coupler", 2},
+      {"underground-pipe-segment-space", 10},
     },
     enabled = false,
-    results = {{type="item", name="one-to-two-L-FL-space-pipe", amount=1}}
+    result = "one-to-two-L-FL-space-pipe"
   },]]--
 
 
@@ -82,13 +82,13 @@ data:extend({
     name = "one-to-three-forward-space-pipe",
     ingredients =
     {
-      {type = "item", name = "se-space-pipe", amount = 1},
-      {type = "item", name = "swivel-joint", amount = 1},
-      {type = "item", name = "space-pipe-coupler", amount = 3},
-      {type = "item", name = "underground-pipe-segment-space", amount = 15},
+      {"se-space-pipe", 1},
+      {"swivel-joint", 1},
+      {"space-pipe-coupler", 3},
+      {"underground-pipe-segment-space", 15},
     },
     enabled = false,
-    results = {{type="item", name="one-to-three-forward-space-pipe", amount=1}}
+    result = "one-to-three-forward-space-pipe"
   },
 
   -- ONE TO FOUR PIPE
@@ -97,12 +97,12 @@ data:extend({
     name = "one-to-four-space-pipe",
     ingredients =
     {
-      {type = "item", name = "se-space-pipe", amount = 1},
-      {type = "item", name = "space-pipe-coupler", amount = 4},
-      {type = "item", name = "underground-pipe-segment-space", amount = 20},
+      {"se-space-pipe", 1},
+      {"space-pipe-coupler", 4},
+      {"underground-pipe-segment-space", 20},
     },
     enabled = false,
-    results = {{type="item", name="one-to-four-space-pipe", amount=1}}
+    result = "one-to-four-space-pipe"
   },
   -- UNDERGROUND I PIPES
   {
@@ -110,11 +110,11 @@ data:extend({
     name = "underground-i-space-pipe",
     ingredients =
     {
-      {type = "item", name = "space-pipe-coupler", amount = 2},
-      {type = "item", name = "underground-pipe-segment-space", amount = 10},
+      {"space-pipe-coupler", 2},
+      {"underground-pipe-segment-space", 10},
     },
     enabled = false,
-    results = {{type="item", name="underground-i-space-pipe", amount=1}}
+    result = "underground-i-space-pipe"
   },
   -- UNDERGROUND L PIPES
   {
@@ -122,11 +122,11 @@ data:extend({
     name = "underground-L-space-pipe",
     ingredients =
     {
-      {type = "item", name = "space-pipe-coupler", amount = 2},
-      {type = "item", name = "underground-pipe-segment-space", amount = 10},
+      {"space-pipe-coupler", 2},
+      {"underground-pipe-segment-space", 10},
     },
     enabled = false,
-    results = {{type="item", name="underground-L-space-pipe", amount=1}}
+    result = "underground-L-space-pipe"
   },
   -- UNDERGROUND T PIPES
   {
@@ -134,11 +134,11 @@ data:extend({
     name = "underground-t-space-pipe",
     ingredients =
     {
-      {type = "item", name = "space-pipe-coupler", amount = 3},
-      {type = "item", name = "underground-pipe-segment-space", amount = 15},
+      {"space-pipe-coupler", 3},
+      {"underground-pipe-segment-space", 15},
     },
     enabled = false,
-    results = {{type="item", name="underground-t-space-pipe", amount=1}}
+    result = "underground-t-space-pipe"
   },
   -- UNDERGROUND CROSS PIPES
   {
@@ -146,11 +146,11 @@ data:extend({
     name = "underground-cross-space-pipe",
     ingredients =
     {
-      {type = "item", name = "space-pipe-coupler", amount = 4},
-      {type = "item", name = "underground-pipe-segment-space", amount = 20},
+      {"space-pipe-coupler", 4},
+      {"underground-pipe-segment-space", 20},
     },
     enabled = false,
-    results = {{type="item", name="underground-cross-space-pipe", amount=1}}
+    result = "underground-cross-space-pipe"
   },
   -- UNDERGROUND BUILDINGS
   {
@@ -158,12 +158,12 @@ data:extend({
     name = "underground-space-pump",
     ingredients =
     {
-      {type = "item", name = "engine-unit", amount = 1},
-      {type = "item", name = "se-heavy-girder", amount = 1},
-      {type = "item", name = "space-pipe-coupler", amount = 2},
-      {type = "item", name = "underground-pipe-segment-space", amount = 10},
+      {"engine-unit", 1},
+      {"se-heavy-girder", 1},
+      {"space-pipe-coupler", 2},
+      {"underground-pipe-segment-space", 10},
     },
     enabled = false,
-    results = {{type="item", name="underground-space-pump", amount=1}}
+    result = "underground-space-pump"
   },
 })
