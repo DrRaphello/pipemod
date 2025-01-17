@@ -522,36 +522,38 @@ data.ignore = {
     ['4-to-4-pipe'] = '4-to-4-pipe'
 }
 
-if settings.global["afh-disable-non-flippables"].value then
-    data.getRotatedPipe['one-to-two-parallel-pipe'] = 'one-to-two-perpendicular-pipe'
-    data.getRotatedPipe['one-to-two-perpendicular-pipe'] = 'one-to-two-parallel-pipe'
-    data.getRotatedPipe['one-to-two-parallel-t2-pipe'] = 'one-to-two-perpendicular-t2-pipe'
-    data.getRotatedPipe['one-to-two-perpendicular-t2-pipe'] = 'one-to-two-parallel-t2-pipe'
-    data.getRotatedPipe['one-to-two-parallel-t3-pipe'] = 'one-to-two-perpendicular-t3-pipe'
-    data.getRotatedPipe['one-to-two-perpendicular-t3-pipe'] = 'one-to-two-parallel-t3-pipe'
-
-    data.getRotatedPipe['one-to-one-forward-pipe'] = 'one-to-one-reverse-pipe'
-    data.getRotatedPipe['one-to-one-reverse-pipe'] = 'one-to-one-forward-pipe'
-    data.getRotatedPipe['one-to-one-forward-t2-pipe'] = 'one-to-one-reverse-t2-pipe'
-    data.getRotatedPipe['one-to-one-reverse-t2-pipe'] = 'one-to-one-forward-t2-pipe'
-    data.getRotatedPipe['one-to-one-forward-t3-pipe'] = 'one-to-one-reverse-t3-pipe'
-    data.getRotatedPipe['one-to-one-reverse-t3-pipe'] = 'one-to-one-forward-t3-pipe'
-
-    data.getReverseRotatedPipe['one-to-two-parallel-pipe'] = 'one-to-two-perpendicular-pipe'
-    data.getReverseRotatedPipe['one-to-two-perpendicular-pipe'] = 'one-to-two-parallel-pipe'
-    data.getReverseRotatedPipe['one-to-two-parallel-t2-pipe'] = 'one-to-two-perpendicular-t2-pipe'
-    data.getReverseRotatedPipe['one-to-two-perpendicular-t2-pipe'] = 'one-to-two-parallel-t2-pipe'
-    data.getReverseRotatedPipe['one-to-two-parallel-t3-pipe'] = 'one-to-two-perpendicular-t3-pipe'
-    data.getReverseRotatedPipe['one-to-two-perpendicular-t3-pipe'] = 'one-to-two-parallel-t3-pipe'
-
-    data.getReverseRotatedPipe['one-to-one-forward-pipe'] = 'one-to-one-reverse-pipe'
-    data.getReverseRotatedPipe['one-to-one-reverse-pipe'] = 'one-to-one-forward-pipe'
-    data.getReverseRotatedPipe['one-to-one-forward-t2-pipe'] = 'one-to-one-reverse-t2-pipe'
-    data.getReverseRotatedPipe['one-to-one-reverse-t2-pipe'] = 'one-to-one-forward-t2-pipe'
-    data.getReverseRotatedPipe['one-to-one-forward-t3-pipe'] = 'one-to-one-reverse-t3-pipe'
-    data.getReverseRotatedPipe['one-to-one-reverse-t3-pipe'] = 'one-to-one-forward-t3-pipe'
-
+data.getRotatedPipeFl = {}
+for old, new in pairs(data.getRotatedPipe) do
+    data.getRotatedPipeFl[old] = new
 end
+data.getRotatedPipeFl['one-to-one-forward-pipe'] = 'one-to-one-reverse-pipe'
+data.getRotatedPipeFl['one-to-one-reverse-pipe'] = 'one-to-one-forward-pipe'
+data.getRotatedPipeFl['one-to-one-forward-t2-pipe'] = 'one-to-one-reverse-t2-pipe'
+data.getRotatedPipeFl['one-to-one-reverse-t2-pipe'] = 'one-to-one-forward-t2-pipe'
+data.getRotatedPipeFl['one-to-one-forward-t3-pipe'] = 'one-to-one-reverse-t3-pipe'
+data.getRotatedPipeFl['one-to-one-reverse-t3-pipe'] = 'one-to-one-forward-t3-pipe'
+data.getRotatedPipeFl['one-to-two-parallel-pipe'] = 'one-to-two-perpendicular-pipe'
+data.getRotatedPipeFl['one-to-two-perpendicular-pipe'] = 'one-to-two-parallel-pipe'
+data.getRotatedPipeFl['one-to-two-parallel-t2-pipe'] = 'one-to-two-perpendicular-t2-pipe'
+data.getRotatedPipeFl['one-to-two-perpendicular-t2-pipe'] = 'one-to-two-parallel-t2-pipe'
+data.getRotatedPipeFl['one-to-two-parallel-t3-pipe'] = 'one-to-two-perpendicular-t3-pipe'
+data.getRotatedPipeFl['one-to-two-perpendicular-t3-pipe'] = 'one-to-two-parallel-t3-pipe'
 
+data.getReverseRotatedPipeFl = {}
+for old, new in pairs(data.getReverseRotatedPipe) do
+    data.getReverseRotatedPipeFl[old] = new
+end
+data.getReverseRotatedPipeFl['one-to-one-forward-pipe'] = 'one-to-one-reverse-pipe'
+data.getReverseRotatedPipeFl['one-to-one-reverse-pipe'] = 'one-to-one-forward-pipe'
+data.getReverseRotatedPipeFl['one-to-one-forward-t2-pipe'] = 'one-to-one-reverse-t2-pipe'
+data.getReverseRotatedPipeFl['one-to-one-reverse-t2-pipe'] = 'one-to-one-forward-t2-pipe'
+data.getReverseRotatedPipeFl['one-to-one-forward-t3-pipe'] = 'one-to-one-reverse-t3-pipe'
+data.getReverseRotatedPipeFl['one-to-one-reverse-t3-pipe'] = 'one-to-one-forward-t3-pipe'
+data.getReverseRotatedPipeFl['one-to-two-parallel-pipe'] = 'one-to-two-perpendicular-pipe'
+data.getReverseRotatedPipeFl['one-to-two-perpendicular-pipe'] = 'one-to-two-parallel-pipe'
+data.getReverseRotatedPipeFl['one-to-two-parallel-t2-pipe'] = 'one-to-two-perpendicular-t2-pipe'
+data.getReverseRotatedPipeFl['one-to-two-perpendicular-t2-pipe'] = 'one-to-two-parallel-t2-pipe'
+data.getReverseRotatedPipeFl['one-to-two-parallel-t3-pipe'] = 'one-to-two-perpendicular-t3-pipe'
+data.getReverseRotatedPipeFl['one-to-two-perpendicular-t3-pipe'] = 'one-to-two-parallel-t3-pipe'
 
 return data

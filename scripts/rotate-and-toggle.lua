@@ -6,6 +6,9 @@ local Position = require('lib/position')
 
 local function RotateUnderground(old_pipe, player, reverse)
     local new_name = reverse and advancedPiping.getReverseRotatedPipe[old_pipe.name] or advancedPiping.getRotatedPipe[old_pipe.name]
+    if settings.global["afh-disable-non-flippables"].value then
+        new_name = reverse and advancedPiping.getReverseRotatedPipeFl[old_pipe.name] or advancedPiping.getRotatedPipeFl[old_pipe.name]
+    end 
     if not new_name then
         return
     end
